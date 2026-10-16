@@ -1,183 +1,212 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-<meta name="google-site-verification" content="A8JHh3fH5RIiaK4BCFkxnlx2CLiFkgdihDLGY3vYoak" />
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SukhanNama | Arshlan Tanha</title>
+
+<title>Sukhanama | Arshlan Tanha</title>
+
+<meta name="description" content="Sukhanama — Arshlan Tanha ki original Hindi aur Urdu shayari, nazmein aur ghazalon ki duniya.">
 
 <style>
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background: #0b0b0b;
-    color: #f5e7c1;
     font-family: Georgia, "Noto Serif", serif;
+    background: #faf7ef;
+    color: #263c30;
+    line-height: 1.8;
 }
 
 header {
-    text-align: center;
-    padding: 30px 15px;
-    background: linear-gradient(135deg, #17120a, #30220b);
-    border-bottom: 1px solid #b89548;
+    background: #faf7ef;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-bottom: 1px solid #e5dfce;
 }
 
 .logo {
-    color: #e5c16b;
-    font-size: 36px;
+    font-size: 27px;
     font-weight: bold;
+    color: #24543c;
+    letter-spacing: 1px;
 }
 
-header p {
-    margin-top: 8px;
-    color: #c9b995;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 15px 8px;
-    background: #111;
-}
-
-button, .navbtn {
-    border: 1px solid #b89548;
-    border-radius: 8px;
-    padding: 10px 14px;
-    background: #20190e;
-    color: #f5d98d;
-    cursor: pointer;
+nav a {
+    text-decoration: none;
+    color: #344b3c;
+    margin-left: 17px;
     font-size: 14px;
 }
 
-button:hover, .navbtn:hover {
-    background: #493718;
-}
-
-.container {
-    max-width: 850px;
-    margin: auto;
-    padding: 20px 15px;
+nav a:hover {
+    color: #a27b37;
 }
 
 .hero {
     text-align: center;
-    padding: 35px 10px;
+    padding: 85px 20px;
+    background: linear-gradient(135deg, #e9efdf, #f7f0df);
+    border-bottom: 1px solid #e5dfce;
+}
+
+.tag {
+    color: #8a713d;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
 }
 
 .hero h1 {
-    color: #e5c16b;
-    font-size: 30px;
-    margin-bottom: 12px;
-}
-
-.hero p {
-    color: #d0c3a5;
-    line-height: 1.8;
-}
-
-h2 {
-    color: #e5c16b;
-    margin: 25px 0 15px;
-}
-
-.search {
-    width: 100%;
-    padding: 13px;
-    margin: 10px 0;
-    background: #171717;
-    border: 1px solid #514326;
-    color: white;
-    border-radius: 8px;
-    font-size: 16px;
-}
-
-.card {
-    background: linear-gradient(145deg, #17140e, #111);
-    border: 1px solid #49391c;
-    border-radius: 12px;
-    padding: 20px;
-    margin: 15px 0;
-}
-
-.poet {
-    color: #d8b85e;
-    font-size: 14px;
-    margin-bottom: 14px;
-}
-
-.poetry {
-    white-space: pre-wrap;
-    line-height: 2;
-    font-size: 18px;
-    overflow-wrap: anywhere;
-}
-
-.actions {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-top: 18px;
-}
-
-form {
-    background: #14120e;
-    border: 1px solid #49391c;
-    padding: 20px;
-    border-radius: 12px;
-    margin: 15px 0;
-}
-
-input, textarea, select {
-    width: 100%;
-    padding: 12px;
-    margin: 8px 0 15px;
-    background: #090909;
-    border: 1px solid #514326;
-    color: #fff;
-    border-radius: 7px;
-    font: inherit;
-}
-
-textarea {
-    min-height: 140px;
-    resize: vertical;
-}
-
-label {
-    color: #e5d4a5;
-}
-
-.notice {
-    color: #d2bd8a;
-    font-size: 13px;
-    line-height: 1.7;
+    font-size: clamp(38px, 8vw, 65px);
+    color: #24543c;
     margin: 12px 0;
 }
 
-footer {
+.hero p {
+    font-size: 17px;
+    color: #5c685d;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 11px 27px;
+    background: #24543c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.button:hover {
+    background: #173b29;
+    transform: translateY(-2px);
+}
+
+section {
+    padding: 65px 7%;
+}
+
+.section-title {
     text-align: center;
-    padding: 30px 15px;
-    margin-top: 35px;
-    border-top: 1px solid #49391c;
-    color: #bcae8c;
+    font-size: 32px;
+    color: #24543c;
+    margin-bottom: 8px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #84785e;
+    margin-bottom: 35px;
+}
+
+.poetry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    gap: 22px;
+    max-width: 1050px;
+    margin: auto;
+}
+
+.poem {
+    background: #fffdf8;
+    border: 1px solid #e7dfce;
+    border-radius: 10px;
+    padding: 28px 22px;
+    box-shadow: 0 5px 18px rgba(40, 60, 40, 0.04);
+    transition: 0.25s;
+}
+
+.poem:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(40, 60, 40, 0.09);
+}
+
+.poem h3 {
+    color: #a27b37;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.poem p {
+    white-space: pre-line;
+    font-size: 17px;
     line-height: 2;
 }
 
-.hidden {
-    display: none;
+.poet {
+    text-align: right;
+    color: #71816d;
+    font-size: 14px;
+    margin-top: 18px;
 }
 
-.empty {
+.about {
+    background: #e9efdf;
     text-align: center;
-    padding: 25px 5px;
-    color: #bcae8c;
+}
+
+.about p {
+    max-width: 650px;
+    margin: 15px auto 0;
+    color: #506252;
+    font-size: 17px;
+}
+
+.quote {
+    max-width: 700px;
+    margin: 30px auto 0;
+    color: #24543c;
+    font-size: 23px;
+    font-style: italic;
+}
+
+footer {
+    background: #24543c;
+    color: #f8f4e9;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer .signature {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .hero {
+        padding: 65px 18px;
+    }
+
+    section {
+        padding: 48px 6%;
+    }
 }
 </style>
 </head>
@@ -185,268 +214,101 @@ footer {
 <body>
 
 <header>
-    <div class="logo">سخن نامہ</div>
-    <h1 class="logo">SukhanNama</h1>
-    <p>Har lafz ek kahani, har shayar ki apni pehchaan.</p>
-    <p>Founded by Arshlan Tanha</p>
+    <div class="logo">✦ Sukhanama</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#shayari">Shayari</a>
+        <a href="#about">About</a>
+    </nav>
 </header>
 
-<nav>
-    <button onclick="showSection('home')">Home</button>
-    <button onclick="filterCategory('All')">All Shayari</button>
-    <button onclick="filterCategory('Dard')">Dard</button>
-    <button onclick="filterCategory('Dosti')">Dosti</button>
-    <button onclick="filterCategory('Bewafai')">Bewafai</button>
-    <button onclick="filterCategory('Zindagi')">Zindagi</button>
-    <button onclick="filterCategory('Urdu')">Urdu Adab</button>
-    <button onclick="showSection('new')">New Shayar</button>
-    <button onclick="showSection('upload')">Upload Shayari</button>
-</nav>
+<main>
 
-<main class="container">
+<section class="hero" id="home">
+    <div class="tag">Alfaaz jo dil tak pahunchein</div>
 
-<section id="home">
-    <div class="hero">
-        <h1>Alfaaz Jo Dil Tak Pahunchein</h1>
-        <p>
-            SukhanNama mein aapka swagat hai.<br>
-            Apne jazbaat ko alfaaz dein aur duniya ke saath baantein.
-        </p>
-        <br>
-        <button onclick="showSection('upload')">Apni Shayari Likhein +</button>
-    </div>
+    <h1>सुख़नामा</h1>
 
-    <h2>🔎 Shayari Talaash Karein</h2>
-    <input
-        id="search"
-        class="search"
-        placeholder="Shayari ya shayar ka naam likhein..."
-        oninput="renderPoetry()"
-    >
+    <p>Har lafz ki apni kahani, har khamoshi ki apni zubaan.</p>
 
-    <h2 id="listTitle">📜 Shayari Collection</h2>
-    <div id="poetryList"></div>
+    <p><strong>By Arshlan Tanha</strong></p>
+
+    <a class="button" href="#shayari">Meri Shayari Padhein ↓</a>
 </section>
 
-<section id="new" class="hidden">
-    <h2>🌟 New Shayar</h2>
-    <p class="notice">
-        Naye shayaron ki manzoor ki gayi rachnayein yahan dikhengi.
+<section id="shayari">
+    <h2 class="section-title">Meri Shayari</h2>
+
+    <p class="section-subtitle">
+        Kuch alfaaz, kuch ehsaas aur kuch ankahi baatein.
     </p>
-    <div id="newPoets"></div>
+
+    <div class="poetry-grid">
+
+        <article class="poem">
+            <h3>01 — Khamoshi</h3>
+
+            <p>
+Kuch baatein lafzon mein dhal nahi paati,
+Kuch yaadein dil se nikal nahi paati.
+Hum likhte hain apne sukoon ke liye,
+Har kahani mehfil mein kahi nahi jaati.
+            </p>
+
+            <div class="poet">— Arshlan Tanha</div>
+        </article>
+
+        <article class="poem">
+            <h3>02 — Insaan</h3>
+
+            <p>
+Chehron ki bheed mein pehchaan dhoondhte hain,
+Khud se door hokar jahaan dhoondhte hain.
+Kabhi dil ki bhi sun liya karo dosto,
+Hum har jagah bas zabaan dhoondhte hain.
+            </p>
+
+            <div class="poet">— Arshlan Tanha</div>
+        </article>
+
+        <article class="poem">
+            <h3>03 — Ek Khayal</h3>
+
+            <p>
+Har raaste ki manzil mile, zaroori toh nahi,
+Har khamoshi mein mehfil mile, zaroori toh nahi.
+Kuch safar khud ko jaanne ke liye hote hain,
+Har safar mein humsafar mile, zaroori toh nahi.
+            </p>
+
+            <div class="poet">— Arshlan Tanha</div>
+        </article>
+
+    </div>
 </section>
 
-<section id="upload" class="hidden">
-    <h2>🖋️ Apni Shayari Upload Karein</h2>
+<section class="about" id="about">
+    <h2 class="section-title">Shayar Kaun?</h2>
 
-    <form id="uploadForm">
-        <label for="poetName">Aapka shayar naam</label>
-        <input id="poetName" maxlength="60" required
-               placeholder="Jaise: Arshlan Tanha">
+    <p>
+        Main hoon Arshlan Tanha. Sukhanama meri woh chhoti si duniya hai,
+        jahan mere alfaaz, mere khayalat aur meri nazmein jagah paate hain.
+        Yahan har lafz ek ehsaas hai aur har nazm ek kahani.
+    </p>
 
-        <label for="category">Shayari ki category</label>
-        <select id="category" required>
-            <option value="Dard">Dard</option>
-            <option value="Dosti">Dosti</option>
-            <option value="Bewafai">Bewafai</option>
-            <option value="Zindagi">Zindagi</option>
-            <option value="Urdu">Urdu Adab</option>
-            <option value="Other">Other</option>
-        </select>
-
-        <label for="poem">Aapki shayari</label>
-        <textarea id="poem" maxlength="3000" required
-                  placeholder="Apne alfaaz yahan likhein..."></textarea>
-
-        <button type="submit">Submit Shayari</button>
-
-        <p class="notice">
-            Zaroori: Abhi ye demo hai. Aapki shayari isi browser mein save
-            hogi. Doosre logon ko dikhane ke liye online database aur
-            moderation system jodna baaki hai.
-        </p>
-    </form>
+    <div class="quote">
+        "Alfaaz mere hain, magar ehsaas shayad tumhare bhi hon."
+    </div>
 </section>
 
 </main>
 
 <footer>
-    <h2>SukhanNama</h2>
-    <p>Awaaz har shayar ki, manch sabhi ke liye.</p>
-    <p>Created with ❤️ by Arshlan Tanha</p>
+    <div class="signature">✦ Arshlan Tanha ✦</div>
+    <p>Sukhanama — Alfaazon Ki Duniya</p>
+    <p>© 2026 Sukhanama. All rights reserved.</p>
 </footer>
 
-<script>
-const starterPoetry = [
-    {
-        name: "SukhanNama",
-        category: "Zindagi",
-        text: "Har lafz mein ek ehsaas chhupa hota hai,\nHar khamoshi ka apna andaaz hota hai."
-    },
-    {
-        name: "SukhanNama",
-        category: "Dosti",
-        text: "Dosti sirf saath chalne ka naam nahi,\nMushkil mein saath rehna bhi aasaan nahi."
-    },
-    {
-        name: "SukhanNama",
-        category: "Dard",
-        text: "Kuch alfaaz dil mein reh jaate hain,\nKuch kisse waqt ke saath beh jaate hain."
-    }
-];
-
-let poems = [];
-
-try {
-    poems = JSON.parse(localStorage.getItem("sukhanNamaPoems")) || [];
-    if (!Array.isArray(poems)) poems = [];
-} catch (e) {
-    poems = [];
-}
-
-let activeCategory = "All";
-
-function savePoems() {
-    try {
-        localStorage.setItem("sukhanNamaPoems", JSON.stringify(poems));
-        return true;
-    } catch (e) {
-        alert("Storage full hai. Kuch purani entries hatao.");
-        return false;
-    }
-}
-
-function showSection(section) {
-    document.getElementById("home").classList.toggle("hidden", section !== "home");
-    document.getElementById("new").classList.toggle("hidden", section !== "new");
-    document.getElementById("upload").classList.toggle("hidden", section !== "upload");
-
-    if (section === "new") renderNewPoets();
-
-    window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
-function filterCategory(category) {
-    activeCategory = category;
-    showSection("home");
-    document.getElementById("listTitle").textContent =
-        category === "All" ? "📜 Shayari Collection" : "📜 " + category + " Shayari";
-    renderPoetry();
-}
-
-function createCard(poem) {
-    const card = document.createElement("article");
-    card.className = "card";
-
-    const author = document.createElement("div");
-    author.className = "poet";
-    author.textContent = "✍️ " + poem.name + " • " + poem.category;
-
-    const content = document.createElement("div");
-    content.className = "poetry";
-    content.textContent = poem.text;
-
-    const actions = document.createElement("div");
-    actions.className = "actions";
-
-    const copy = document.createElement("button");
-    copy.textContent = "📋 Copy Shayari";
-    copy.onclick = async () => {
-        try {
-            await navigator.clipboard.writeText(poem.text);
-            alert("Shayari copy ho gayi!");
-        } catch (e) {
-            const area = document.createElement("textarea");
-            area.value = poem.text;
-            card.appendChild(area);
-            area.select();
-            document.execCommand("copy");
-            area.remove();
-            alert("Shayari copy karne ki koshish ki gayi.");
-        }
-    };
-
-    const like = document.createElement("button");
-    like.textContent = "❤️ " + (poem.likes || 0);
-    like.onclick = () => {
-        poem.likes = (poem.likes || 0) + 1;
-        savePoems();
-        renderPoetry();
-    };
-
-    actions.append(copy, like);
-    card.append(author, content, actions);
-    return card;
-}
-
-function renderPoetry() {
-    const list = document.getElementById("poetryList");
-    list.replaceChildren();
-
-    const query = document.getElementById("search").value.trim().toLowerCase();
-
-    const all = [...poems, ...starterPoetry].filter(p => {
-        const matchesCategory =
-            activeCategory === "All" || p.category === activeCategory;
-        const matchesQuery =
-            (p.name + " " + p.text + " " + p.category).toLowerCase().includes(query);
-        return matchesCategory && matchesQuery;
-    }).reverse();
-
-    if (!all.length) {
-        list.innerHTML = '<p class="empty">Abhi is category mein shayari nahi mili.</p>';
-        return;
-    }
-
-    all.forEach(p => list.appendChild(createCard(p)));
-}
-
-function renderNewPoets() {
-    const box = document.getElementById("newPoets");
-    box.replaceChildren();
-
-    if (!poems.length) {
-        box.innerHTML =
-            '<p class="empty">Abhi koi nayi shayari submit nahi hui. Pehle apni shayari upload karein!</p>';
-        return;
-    }
-
-    [...poems].reverse().forEach(p => box.appendChild(createCard(p)));
-}
-
-document.getElementById("uploadForm").addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    const name = document.getElementById("poetName").value.trim();
-    const category = document.getElementById("category").value;
-    const text = document.getElementById("poem").value.trim();
-
-    if (!name || !text) {
-        alert("Naam aur shayari dono likhna zaroori hai.");
-        return;
-    }
-
-    poems.push({
-        name,
-        category,
-        text,
-        likes: 0,
-        date: new Date().toISOString()
-    });
-
-    if (!savePoems()) {
-        poems.pop();
-        return;
-    }
-
-    this.reset();
-    alert("Shayari is browser mein save ho gayi! Public website upload abhi setup nahi hai.");
-    showSection("home");
-    renderPoetry();
-});
-
-renderPoetry();
-</script>
-
 </body>
-    </html>
+</html>
