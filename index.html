@@ -4,311 +4,242 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sukhanama | Arshlan Tanha</title>
+<title>SUKHANNAMA | Shayari, Nazm aur Ghazal</title>
 
-<meta name="description" content="Sukhanama — Arshlan Tanha ki original Hindi aur Urdu shayari, nazmein aur ghazalon ki duniya.">
+<meta name="description" content="Sukhannama - Jaun Elia, Ahmad Faraz, Allama Iqbal, Faiz Ahmad Faiz, Mirza Ghalib, Parveen Shakir aur Arshlan Tanha ki shayari.">
+<meta name="theme-color" content="#f8f5ed">
 
 <style>
+:root {
+  --bg: #f8f5ed;
+  --card: #ffffff;
+  --green: #244b3c;
+  --gold: #b58a46;
+  --text: #292d29;
+  --muted: #77786f;
+  --border: #e9e1d2;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: Georgia, "Noto Serif", serif;
-    background: #faf7ef;
-    color: #263c30;
-    line-height: 1.8;
+  font-family: Georgia, "Noto Serif", serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
 }
 
 header {
-    background: #faf7ef;
-    padding: 20px 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    border-bottom: 1px solid #e5dfce;
+  background: var(--green);
+  color: white;
+  padding: 22px 16px;
+  text-align: center;
 }
 
 .logo {
-    font-size: 27px;
-    font-weight: bold;
-    color: #24543c;
-    letter-spacing: 1px;
+  font-size: clamp(30px, 7vw, 45px);
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.tagline {
+  color: #f0dfb9;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+nav {
+  background: #fff;
+  padding: 13px 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 nav a {
-    text-decoration: none;
-    color: #344b3c;
-    margin-left: 17px;
-    font-size: 14px;
+  color: var(--green);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
 }
 
 nav a:hover {
-    color: #a27b37;
+  color: var(--gold);
 }
 
 .hero {
-    text-align: center;
-    padding: 85px 20px;
-    background: linear-gradient(135deg, #e9efdf, #f7f0df);
-    border-bottom: 1px solid #e5dfce;
-}
-
-.tag {
-    color: #8a713d;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 12px;
+  text-align: center;
+  padding: 42px 18px 25px;
 }
 
 .hero h1 {
-    font-size: clamp(38px, 8vw, 65px);
-    color: #24543c;
-    margin: 12px 0;
+  color: var(--green);
+  font-size: clamp(27px, 6vw, 39px);
+  margin-bottom: 8px;
 }
 
 .hero p {
-    font-size: 17px;
-    color: #5c685d;
+  color: var(--muted);
+  max-width: 600px;
+  margin: auto;
 }
 
-.button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 11px 27px;
-    background: #24543c;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.2s;
+.search-area {
+  max-width: 650px;
+  margin: 22px auto 0;
+  padding: 0 15px;
 }
 
-.button:hover {
-    background: #173b29;
-    transform: translateY(-2px);
+#search {
+  width: 100%;
+  padding: 15px 18px;
+  border: 1px solid #d7c9ae;
+  border-radius: 30px;
+  outline: none;
+  font-size: 16px;
+  background: white;
 }
 
-section {
-    padding: 65px 7%;
+#search:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px #b58a4620;
+}
+
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 17px;
 }
 
 .section-title {
-    text-align: center;
-    font-size: 32px;
-    color: #24543c;
-    margin-bottom: 8px;
+  text-align: center;
+  color: var(--green);
+  font-size: 27px;
+  margin-bottom: 7px;
 }
 
 .section-subtitle {
-    text-align: center;
-    color: #84785e;
-    margin-bottom: 35px;
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.poet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+  gap: 13px;
+}
+
+.poet-card {
+  display: block;
+  text-align: center;
+  padding: 22px 10px;
+  border-radius: 15px;
+  background: white;
+  border: 1px solid var(--border);
+  color: var(--green);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.poet-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--gold);
+}
+
+.poet-icon {
+  font-size: 28px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.poet-card strong {
+  display: block;
+  font-size: 16px;
+}
+
+.poet-card small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.featured {
+  background: var(--green);
+  color: white;
+  border-radius: 18px;
+  padding: 26px 20px;
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.featured h2 {
+  font-size: 27px;
+  color: #f0dfb9;
+}
+
+.featured p {
+  margin: 8px 0 16px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 17px;
+  border-radius: 24px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.button-gold {
+  background: #e6c68b;
+  color: #263c30;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.filter-btn {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid #d9cfbd;
+  background: white;
+  color: var(--green);
+  cursor: pointer;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--green);
+  color: white;
 }
 
 .poetry-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
-    gap: 22px;
-    max-width: 1050px;
-    margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+  gap: 17px;
 }
 
 .poem {
-    background: #fffdf8;
-    border: 1px solid #e7dfce;
-    border-radius: 10px;
-    padding: 28px 22px;
-    box-shadow: 0 5px 18px rgba(40, 60, 40, 0.04);
-    transition: 0.25s;
-}
-
-.poem:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 24px rgba(40, 60, 40, 0.09);
-}
-
-.poem h3 {
-    color: #a27b37;
-    font-size: 21px;
-    margin-bottom: 15px;
-}
-
-.poem p {
-    white-space: pre-line;
-    font-size: 17px;
-    line-height: 2;
-}
-
-.poet {
-    text-align: right;
-    color: #71816d;
-    font-size: 14px;
-    margin-top: 18px;
-}
-
-.about {
-    background: #e9efdf;
-    text-align: center;
-}
-
-.about p {
-    max-width: 650px;
-    margin: 15px auto 0;
-    color: #506252;
-    font-size: 17px;
-}
-
-.quote {
-    max-width: 700px;
-    margin: 30px auto 0;
-    color: #24543c;
-    font-size: 23px;
-    font-style: italic;
-}
-
-footer {
-    background: #24543c;
-    color: #f8f4e9;
-    text-align: center;
-    padding: 28px 15px;
-}
-
-footer p {
-    font-size: 14px;
-}
-
-footer .signature {
-    font-size: 20px;
-    margin-bottom: 5px;
-}
-
-@media (max-width: 600px) {
-    header {
-        justify-content: center;
-        text-align: center;
-    }
-
-    nav a {
-        margin: 0 7px;
-    }
-
-    .hero {
-        padding: 65px 18px;
-    }
-
-    section {
-        padding: 48px 6%;
-    }
-}
-</style>
-</head>
-
-<body>
-
-<header>
-    <div class="logo">✦ Sukhanama</div>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#shayari">Shayari</a>
-        <a href="#about">About</a>
-    </nav>
-</header>
-
-<main>
-
-<section class="hero" id="home">
-    <div class="tag">Alfaaz jo dil tak pahunchein</div>
-
-    <h1>सुख़नामा</h1>
-
-    <p>Har lafz ki apni kahani, har khamoshi ki apni zubaan.</p>
-
-    <p><strong>By Arshlan Tanha</strong></p>
-
-    <a class="button" href="#shayari">Meri Shayari Padhein ↓</a>
-</section>
-
-<section id="shayari">
-    <h2 class="section-title">Meri Shayari</h2>
-
-    <p class="section-subtitle">
-        Kuch alfaaz, kuch ehsaas aur kuch ankahi baatein.
-    </p>
-
-    <div class="poetry-grid">
-
-        <article class="poem">
-            <h3>01 — Khamoshi</h3>
-
-            <p>
-Kuch baatein lafzon mein dhal nahi paati,
-Kuch yaadein dil se nikal nahi paati.
-Hum likhte hain apne sukoon ke liye,
-Har kahani mehfil mein kahi nahi jaati.
-            </p>
-
-            <div class="poet">— Arshlan Tanha</div>
-        </article>
-
-        <article class="poem">
-            <h3>02 — Insaan</h3>
-
-            <p>
-Chehron ki bheed mein pehchaan dhoondhte hain,
-Khud se door hokar jahaan dhoondhte hain.
-Kabhi dil ki bhi sun liya karo dosto,
-Hum har jagah bas zabaan dhoondhte hain.
-            </p>
-
-            <div class="poet">— Arshlan Tanha</div>
-        </article>
-
-        <article class="poem">
-            <h3>03 — Ek Khayal</h3>
-
-            <p>
-Har raaste ki manzil mile, zaroori toh nahi,
-Har khamoshi mein mehfil mile, zaroori toh nahi.
-Kuch safar khud ko jaanne ke liye hote hain,
-Har safar mein humsafar mile, zaroori toh nahi.
-            </p>
-
-            <div class="poet">— Arshlan Tanha</div>
-        </article>
-
-    </div>
-</section>
-
-<section class="about" id="about">
-    <h2 class="section-title">Shayar Kaun?</h2>
-
-    <p>
-        Main hoon Arshlan Tanha. Sukhanama meri woh chhoti si duniya hai,
-        jahan mere alfaaz, mere khayalat aur meri nazmein jagah paate hain.
-        Yahan har lafz ek ehsaas hai aur har nazm ek kahani.
-    </p>
-
-    <div class="quote">
-        "Alfaaz mere hain, magar ehsaas shayad tumhare bhi hon."
-    </div>
-</section>
-
-</main>
-
-<footer>
-    <div class="signature">✦ Arshlan Tanha ✦</div>
-    <p>Sukhanama — Alfaazon Ki Duniya</p>
-    <p>© 2026 Sukhanama. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
+  background: var(--card);
+  border: 1
